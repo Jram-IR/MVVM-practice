@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="#212121">
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/editbox_background"
+        android:backgroundTint="#484848"
+        android:hint="Title"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="#E0CECE"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/num_picker"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@android:drawable/edit_text"
+        android:gravity="start"
+        android:hint="Type description"
+        android:textColorHint="#E0CECE"
+        android:padding="8dp"
+        android:backgroundTint="#484848"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_title"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <NumberPicker
+        android:id="@+id/num_picker"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/et_title"
+        app:layout_constraintEnd_toStartOf="@+id/et_title"
+        app:layout_constraintHorizontal_bias="0.355"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
